@@ -81,7 +81,10 @@ class IosDriver(AbstractDriver):
 
         desired_capabilities = dict()
         desired_capabilities['app'] = driver_settings["app"]
-        desired_capabilities['device'] = driver_settings["device"]
-        desired_capabilities['platform'] = driver_settings["platform"]
-        desired_capabilities['version'] = driver_settings["version"]
+        desired_capabilities['appium-version'] = driver_settings["appium-version"]
+        desired_capabilities['name'] = driver_settings["name"]
+        desired_capabilities['platformName'] = driver_settings["platformname"]
+        desired_capabilities['deviceName'] = driver_settings["devicename"]
+        desired_capabilities['platformVersion'] = driver_settings["platformversion"]
+
         return desired_capabilities
