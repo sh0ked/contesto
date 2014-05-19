@@ -9,3 +9,6 @@ MANIFEST
 
 ### IDE ###
 .idea/
+
+### Virtualenv ###
+.env/
