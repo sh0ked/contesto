@@ -16,7 +16,7 @@ class DesireCapabilitiesTestCase(unittest.TestCase):
         desired_capabilities = driver._form_desired_capabilities(driver_settings)
         self.assertEqual(desired_capabilities["app"], "/Users/test/app.app", 'wrong app in capabilities in iosdriver')
         self.assertEqual(desired_capabilities["appium-version"], '1.0.0-beta.2', 'wrong appium version in capabilities in iosdriver')
-        self.assertEqual(desired_capabilities["name"], "iOS", 'wrong name in capabilities in iosdriver')
+        self.assertEqual(desired_capabilities["name"], "GUI iOS test", 'wrong name in capabilities in iosdriver')
         self.assertEqual(desired_capabilities["platformName"], "iOS", 'wrong platform name in capabilities in iosdriver')
         self.assertEqual(desired_capabilities["deviceName"], "iPhone Simulator", 'wrong device name in capabilities in iosdriver')
         self.assertEqual(desired_capabilities["platformVersion"], 7.1, 'wrong platform version in capabilities in iosdriver')
